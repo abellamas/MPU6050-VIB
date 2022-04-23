@@ -38,6 +38,7 @@ class serialPlot:
         try:
             #os.system('echo 8323 | sudo -S chmod a+rw /dev/ttyACM0')
             self.serialConnection = serial.Serial(serialPort, serialBaud, timeout=4)
+            
             print('Connected to ' + str(serialPort) + ' at ' + str(serialBaud) + ' BAUD.')
         except:
             print("Failed to connect with " + str(serialPort) + ' at ' + str(serialBaud) + ' BAUD.')

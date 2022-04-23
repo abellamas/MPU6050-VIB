@@ -35,7 +35,7 @@ class Inicio(Widget):
         self.textosGraficosAmplitudDinamica = []
         # Armado de app Widget con vinculo con archivo de estilo cistas.kv
         # Acomodar
-        self.t_max = 8 # Tiempo en segundos que se muestran
+        self.t_max = 10 # Tiempo en segundos que se muestran
         self.muestras_plot = self.t_max * self.sampleRate
 
         self.medicioncompleta1 = []
@@ -73,7 +73,7 @@ class Inicio(Widget):
         if not self.conectado:
 
             # Defino parámetros para el objeto Serial
-            portName = 'COM3'
+            portName = 'COM4'
             baudRate = 115200
             dataNumBytes = 2        # number of bytes of 1 data point
             numPlots = 2            # number of plots in 1 graph
